@@ -13,7 +13,7 @@ Docs link: https://docs.google.com/document/d/1JfZjoqg-OCYuqFXl9SZxvS9pro0GMyW_N
 
 ### Some of the basics
 * Use the `<Text></Text>` component for displaying text. You need to use it if you want text to show up. You will lose time searching for a bug if you don’t remember this early on.
-* Replace `<div>` with `<View></View>`. The most fundamental component for build a UI in react-native. 
+* Replace `<div>` with `<View></View>`, the most fundamental component for building a UI in react-native.
 * Instead of using `<img src={}  />` for images, use `<Image source={}  />`.
 * No more `<input />`, you should use the <TextInput /> component.
 
@@ -25,8 +25,8 @@ You may have heard that styling in React Native isn’t fun. It isn’t. Many of
 * `<Text>` style props: https://facebook.github.io/react-native/docs/text-style-props.html
 * `<Image />` style props: https://facebook.github.io/react-native/docs/image-style-props.html
 
-Another options is to use a library like styled-components. Styled-components supports more of the CSS properties that you are used to.: https://www.npmjs.com/package/styled-components
-From what I have read and seen through searching the interwebs, there are not tons of good component libs for React Native. Here are some options at the time that this guide was written: 
+Another option is to use a library such as styled-components. Styled-components supports more of the CSS properties that you are used to.: https://www.npmjs.com/package/styled-components
+From what I have read and seen through searching the interwebs, there are not tons of good component libs for React Native. Here are some options at the time that this guide was written:
 
 * NativeBase: https://nativebase.io/
 * React Native Material Design: https://github.com/react-native-material-design/react-native-material-design
@@ -37,21 +37,21 @@ If none of these options are providing you with what you want, then you always h
 
 A few things to know:
 
-* Components in React Native are styled using JavaScript. You will not use a class/className prop for styling, you will use the style prop. The style prop can either be an object, or an array of styles. Convert kabob case to camel case, example: background-color should be backgroundColor.
+* Components in React Native are styled using JavaScript. You will not use a class/className prop for styling. You will instead use the style prop. The style prop can either be an object, or an array of styles. Convert kabob case to camel case, example: background-color should be backgroundColor.
 * Height and width dimensions are unitless. If you want something to have a height of ‘50px’, just use: height: 50
-* Flexbox works a little different. On the web, flex-direction defaults to ‘row’, while in React Native, flexDirection defaults to column. The flex property specifies how a flex item will grow or shrink so as to fit the space available in the flex container (https://developer.mozilla.org/en-US/docs/Web/CSS/flex). In React Native, the flex property only supports using a single number, eg. flex: 2.
+* Flexbox works a little differently. On the web, flex-direction defaults to ‘row’, while in React Native, flexDirection defaults to column. The flex property specifies how a flex item will grow or shrink so as to fit the space available in the flex container (https://developer.mozilla.org/en-US/docs/Web/CSS/flex). In React Native, the flex property only supports using a single number, eg. flex: 2.
 
 ### HTTP Requests
 * Use axios, just like you have been using for all your other projects.
 
 ### Routing
-* Use: `react-router-native`. There is another lib out there called ‘react-native-router’, which you don’t want, but it is easy to confuse the two. 
+* Use: `react-router-native`. There is another lib out there called ‘react-native-router’, which you don’t want, but it is easy to confuse the two.
 * Use `<Route>` and `<Link>` just like you normally do with `react-router-dom`
 * Docs: https://reacttraining.com/react-router/native/example/Basic
 
 ### Redux
 * You can use redux and react-redux libs in a React Native app just like you would normally for your React apps.
-* Here is what index.js will look like: 
+* Here is what index.js will look like:
 
 ```
 import React from 'react';
